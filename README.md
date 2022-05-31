@@ -2,7 +2,7 @@ Reinforcement Learning - Basab Dattaray
 Running the Demos
 Demos are available in the sub-package ws/demos. Steps:
 
-Download from the Github url: https://github.com/basab-dattaray/RLGames.git.
+Download from the Github url: https://github.com/dattaray-basab/RLGames.git.
 To install the supporting python packages run: pip3 install -r requirements.txt
 Navigate to the relative path "ws/Demos".
 By exploring through the sub folders here, you will be able to find demos using different strategies of reinforcement learning such as planning (model based), model_free, function_approximations and policy_gradient. The strategy and other attributes for a demo is defined in the demo_APP_INFO.JSON file that exists in the same folder as the demo. Please note that strategy sub-classifications are nested by using a dot (.) nomenclature. For example an demo_APP_INFO.JSON file that accompanies a demo includes the entry "STRATEGY": "model_based.policy_gradient.ppo" implies an the demo uses an agent category "ppo" which is a subcategory of "policy_gradient" category, which is in turn a subcategory of the "model_free" category. This classification by hierarchical strategies enables efficient module sharing across like-strategies.
