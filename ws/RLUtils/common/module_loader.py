@@ -5,8 +5,9 @@ def get_module(tag, package_tag):
     try:
         obj = importlib.import_module(tag, package_tag)
         return obj
-    except:
-        return None
+    except Exception as x:
+        print(x)
+        exit()
 
 
 def load_function(function_name, module_name, module_dot_path, package_tag=None):
