@@ -5,8 +5,8 @@ def get_module(tag, package_tag):
     try:
         obj = importlib.import_module(tag, package_tag)
         return obj
-    except Exception as x:
-        print(x)
+    except Exception as e:
+        print(e)
         exit()
 
 
